@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Data Entry Form</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <div id="example"></div>
+        <div id="form"></div>
 
     <!--Scripts-->
     <script type="text/javascript" src="/js/app.js"></script>
