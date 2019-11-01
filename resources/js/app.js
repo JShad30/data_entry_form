@@ -13,3 +13,7 @@ require('./bootstrap');
  */
 
 require('./components/form.js');
+
+require('./form-scroll.js');
+
+require('./form-validation.js');

@@ -17,7 +17,7 @@ $next-button-top: #424CB2
 $next-button-bottom: #8A7CD6
 
 // Text colours
-$header-text-colour: #000000
+$header-text-colour: #FAFAFA
 $label-colour: #FAFAFA
 
 // Shadows
@@ -45,6 +45,7 @@ html
     background-color: $bg-color
 
 .data-form
+    width: 700px
     background-color: $form-background
     border: $border
     border-radius: $radius
@@ -65,6 +66,7 @@ html
     padding: 15px
     background: linear-gradient(to bottom, $top-yellow, $bottom-yellow)
     z-index: 1
+    cursor: pointer
 
 .data-form-section-content
     height: 200px
@@ -72,26 +74,18 @@ html
     margin-top: -15px
     background-color: $grey
     border-radius: $radius
-    flex-direction: row
     z-index: -1
-
-#data-form-details-content
     display: flex
+    flex-direction: row
 
 #data-form-details-content.active
     display: none
 
-#data-form-comments-content
-    display: none
-
 #data-form-comments-content.active
-    display: flex
-
-#data-form-more-comments-content
     display: none
 
-#data-form-more-comments-content.active
-    display: flex
+#data-form-final-comments-content.active
+    display: none
 
 .data-form-section-content-input
     width: 66%
@@ -110,13 +104,19 @@ html
 
 .data-form-section-header-text
     color: #fafafa
-    font-weight: 600
-    text-shadow: 1px 1px 1px #000000
+    font-weight: 800
+    text-shadow: $text-shadow
     margin: 0
 
 .input-section
     width: 47%
-    height: 30px
+
+.dob-input-fields
+    display: flex
+    flex-direction: row
+
+.dob-input
+    width: 30%
 
 .input-label
     margin-bottom: 4px
