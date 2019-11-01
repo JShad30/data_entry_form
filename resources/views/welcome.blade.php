@@ -14,7 +14,9 @@
 
     </head>
     <body>
-        <div id="form"></div>
+        <div class="container">
+            <div id="form"></div>
+        </div>
 
     <!--Scripts-->
     <script type="text/javascript" src="/js/app.js"></script>
