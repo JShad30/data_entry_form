@@ -15,11 +15,13 @@
     </head>
     <body>
         <div class="container">
+            <div class="error-message" id="error-message"></div>
             <div id="form"></div>
+            <div class="form-complete-message" id="form-complete-message">Thanks for completing the form!</div>
         </div>
 
         <!--Scripts-->
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/js/app.js"></script>
 
     </body>

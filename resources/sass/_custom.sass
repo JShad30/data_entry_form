@@ -19,6 +19,7 @@ $next-button-bottom: #8A7CD6
 // Text colours
 $header-text-colour: #FAFAFA
 $label-colour: #FAFAFA
+$error: red
 
 // Shadows
 $box-shadow: 0px 0px 20px #333333
@@ -42,7 +43,6 @@ html
     padding-right: 0
     padding-left: 0
     border-radius: $radius
-    background-color: $bg-color
 
 .data-form
     width: 700px
@@ -57,6 +57,8 @@ html
 
 .data-form-section
     margin: 3px
+    background-color: $grey
+    border-radius: $radius
 
 .data-form-section-header
     height: 45px
@@ -66,32 +68,39 @@ html
     padding: 15px
     background: linear-gradient(to bottom, $top-yellow, $bottom-yellow)
     z-index: 1
-    cursor: pointer
 
 .data-form-section-content
     height: 200px
     padding: 15px
     margin-top: -15px
-    background-color: $grey
-    border-radius: $radius
-    z-index: -1
-    display: flex
     flex-direction: row
+    justify-content: space-between
+
+#data-form-details-content
+    display: flex
 
 #data-form-details-content.active
     display: none
 
+#data-form-comments-content
+    display: none
+
 #data-form-comments-content.active
+    display: flex
+    flex-direction: row
+
+#data-form-final-comments-content
     display: none
 
 #data-form-final-comments-content.active
-    display: none
+    display: flex
 
 .data-form-section-content-input
     width: 66%
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    padding-top: 10px
 
 .data-form-section-content-button
     width: 33%
@@ -111,16 +120,67 @@ html
 .input-section
     width: 47%
 
+.final-comments-input-section
+    width: 100%
+
 .dob-input-fields
     display: flex
     flex-direction: row
+    justify-content: space-between
+    width: 75%
 
 .dob-input
     width: 30%
+    border: 0
+    width: 31%
+    height: 35px
+    border-radius: $radius
+    box-shadow: $input-shadow
 
 .input-label
     margin-bottom: 4px
     font-weight: 800
+
+.error-message
+    color: $error
+    font-size: 0.9em
+    font-style: italic
+
+#firstname-message
+    display: none
+
+#firstname-message.active
+    display: block
+
+#surname-message
+    display: none
+
+#surname-message.active
+    display: block
+
+#email-message
+    display: none
+
+#email-message.active
+    display: block
+
+#telephone-message
+    display: none
+
+#telephone-message.active
+    display: block
+
+#gender-message
+    display: none
+
+#gender-message.active
+    display: block
+
+#dob-message
+    display: none
+
+#dob-message.active
+    display: block
 
 .input-textbox
     border: 0
@@ -128,6 +188,24 @@ html
     height: 35px
     border-radius: $radius
     box-shadow: $input-shadow
+    padding: 0 10px
+
+.gender-drop-down-menu
+    width: 80%
+    height: 35px
+    border-radius: $radius
+    border: $border
+    background-color: $grey
+    box-shadow: $input-shadow
+    color: #7D7D7D
+    padding: 0 10px
+    cursor: pointer
+
+.comments-textfield
+    border: 0
+    border-radius: $radius
+    box-shadow: $input-shadow
+    padding: 0 10px
 
 .next-button
     border: 0
@@ -137,3 +215,19 @@ html
     font-weight: 800
     width: 120px
     height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.form-complete-message
+    display: none
+    font-size: 1.2em
+    margin-top: 30px
+    height: 30px
+    justify-content: center
+    align-items: center
+    background-color: blue
+
+#form-complete-message.active
+    display: flex
