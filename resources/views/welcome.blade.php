@@ -18,9 +18,6 @@
             <div class="error-message" id="error-message"></div>
             <div id="form"></div>
         </div>
-        <div class="form-complete-message" id="form-complete-message">
-            <p class="form-complete-message-text">Thanks for completing the form!</p>
-        </div>
 
         <!--Scripts-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

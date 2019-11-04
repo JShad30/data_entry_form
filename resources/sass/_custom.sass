@@ -33,11 +33,12 @@ $radius: 10px
 $border: 0px
 
 html
-    background-color: $bg-color
+    /*background-color: $bg-color*/
     min-height: 100vh
     display: flex
     justify-content: center
     align-items: center
+    background-color: $bg-color
 
 .container
     padding-right: 0
@@ -73,11 +74,11 @@ html
     height: 200px
     padding: 15px
     margin-top: -15px
+    justify-content: space-between
+    flex-direction: row
 
 #data-form-details-content
     display: flex
-    flex-direction: row
-    justify-content: space-between
 
 #data-form-details-content.active
     display: none
@@ -87,15 +88,12 @@ html
 
 #data-form-comments-content.active
     display: flex
-    flex-direction: row
-    justify-content: space-between
 
 #data-form-final-comments-content
     display: none
 
 #data-form-final-comments-content.active
-    flex-direction: row
-    justify-content: space-between
+    display: flex
 
 .data-form-section-content-input
     width: 66%
@@ -224,16 +222,21 @@ html
     cursor: pointer
 
 .form-complete-message
-    display: none
-    font-size: 1.2em
-    margin-top: 15px
-    height: 40px
-    border-radius: 10px
-    background-color: linear-gradient(to bottom, $next-button-top, $next-button-bottom)
-    color: $label-colour
-    z-index: 1
+    justify-content: center
+    align-items: center
 
-#form-complete-message.active
+.form-complete-message-text
     display: flex
     justify-content: center
     align-items: center
+    height: inherit
+
+#form-complete-message
+    display: none
+    font-size: 1.2em
+    height: 40px
+    border-radius: 10px
+    background-color: linear-gradient(to bottom, $next-button-top, $next-button-bottom)
+
+#form-complete-message.active
+    display: flex

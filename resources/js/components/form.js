@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 function Form() {
     return (
-        <form class="data-form">
+        <form class="data-form" method="POST">
             <div class="data-form-section" id="data-form-details">
                 <div class="data-form-section-header" id="data-form-details-header">
                     <p class="data-form-section-header-text">Step 1: Your details</p>
@@ -74,6 +74,11 @@ function Form() {
                     <div class="data-form-section-content-button">
                         <input class="next-button" id="final-comments-next-button" type="submit" value="Next >"></input>
                     </div>
+                </div>
+            </div>
+            <div class="data-form-section" id="data-form-complete-message">
+                <div class="form-complete-message" id="form-complete-message">
+                    <p class="form-complete-message-text">Thanks for completing the form!</p>
                 </div>
             </div>
         </form>

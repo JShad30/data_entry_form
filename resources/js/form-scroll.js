@@ -39,6 +39,22 @@ $(document).ready(function() {
             $("#telephone-message").show("active");
         }
 
+        if (gender.value != "Male" || gender.value != "Female") {
+            $("#gender-message").show("active");
+        }
+
+        if (dobday.length === 0) {
+            $("#dob-message").show("active");
+        }
+
+        if (dobmonth.length === 0) {
+            $("#dob-message").show("active");
+        }
+
+        if (dobyear.length === 0) {
+            $("#dob-message").show("active");
+        }
+
         if (telephone.length > 0) {
             $("#data-form-comments-content").slideUp("fast");
             $("#data-form-final-comments-content").slideDown("fast");
