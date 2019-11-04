@@ -39,33 +39,13 @@ $(document).ready(function() {
             $("#telephone-message").show("active");
         }
 
-        if (gender.val != "Male" || gender.val != "Female") {
-            $("#gender-message").show("active");
-        }
-
-        if (dobday.val <= 0 || dobday.val > 31) {
-            $("#dobday-message").show("active");
-        }
-
-        if (dobmonth.val <= 0 || dobmonth.val > 12) {
-            $("#dobmonth-message").show("active");
-        }
-
-        if (dobyear.length <= 0 || dobyear.length > 4) {
-            $("#dobyear-message").show("active");
-        }
-
-        if (dobday.length === 0 || dobmonth.length === 0 || dobyear.length === 0) {
-            $("#dob-message").show("active");
-        }
-
-        if (telephone.length > 0 && gender.value == "Male" || gender.value == "Female" && dobday.value <= 0 || dobday.value > 31 && dobmonth.value <= 0 || dobmonth.value > 12 && dobyear.length <= 0 || dobyear.value > 12) {
+        if (telephone.length > 0) {
             $("#data-form-comments-content").slideUp("fast");
             $("#data-form-final-comments-content").slideDown("fast");
         }
     });
 
-    $("#comments-next-button").on("click", function(e) {
+    $("#final-comments-next-button").on("click", function(e) {
         e.preventDefault();
         $("#data-form-final-comments-content").slideUp("fast");
         $("#form-complete-message").show("active");

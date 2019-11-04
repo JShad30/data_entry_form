@@ -17,7 +17,9 @@
         <div class="container">
             <div class="error-message" id="error-message"></div>
             <div id="form"></div>
-            <div class="form-complete-message" id="form-complete-message">Thanks for completing the form!</div>
+        </div>
+        <div class="form-complete-message" id="form-complete-message">
+            <p class="form-complete-message-text">Thanks for completing the form!</p>
         </div>
 
         <!--Scripts-->

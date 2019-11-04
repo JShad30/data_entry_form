@@ -73,11 +73,11 @@ html
     height: 200px
     padding: 15px
     margin-top: -15px
-    flex-direction: row
-    justify-content: space-between
 
 #data-form-details-content
     display: flex
+    flex-direction: row
+    justify-content: space-between
 
 #data-form-details-content.active
     display: none
@@ -88,12 +88,14 @@ html
 #data-form-comments-content.active
     display: flex
     flex-direction: row
+    justify-content: space-between
 
 #data-form-final-comments-content
     display: none
 
 #data-form-final-comments-content.active
-    display: flex
+    flex-direction: row
+    justify-content: space-between
 
 .data-form-section-content-input
     width: 66%
@@ -134,6 +136,7 @@ html
     border: 0
     width: 31%
     height: 35px
+    padding: 0 10px
     border-radius: $radius
     box-shadow: $input-shadow
 
@@ -223,11 +226,14 @@ html
 .form-complete-message
     display: none
     font-size: 1.2em
-    margin-top: 30px
-    height: 30px
-    justify-content: center
-    align-items: center
-    background-color: blue
+    margin-top: 15px
+    height: 40px
+    border-radius: 10px
+    background-color: linear-gradient(to bottom, $next-button-top, $next-button-bottom)
+    color: $label-colour
+    z-index: 1
 
 #form-complete-message.active
     display: flex
+    justify-content: center
+    align-items: center
